@@ -1,0 +1,12 @@
+name: My Github Action Workflow
+on: [Push]
+
+jobs:
+  testing_github:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello
+        run: echo "Hello Github Action"
+      - name: Display repo name
+        run: echo "This workflow is running in ${{github.repository}}"
+
